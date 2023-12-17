@@ -1,44 +1,54 @@
-html, body {
+* {
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* CSS generated from https://uigradients.com */
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family: "Oxygen", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F3F8FF,
+}
+
+
+/* Title - Hard coded*/
+.title-el {
+    color: #161A30;
+
+}
+
+/* Where Boredbot API will render result */
+.idea {
+    color: #31304D;
+
+}
+
+/* div that holds the image */
+.image-container {
+    width: 25em;
+    height: 25em;
+    margin: 0 auto;
+}
+
+.return-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+
+}
+
+.btn-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 0;
-}
-
-button {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    border-radius: 50%;
-    outline: none;
-    border: 1px solid darkred;
-    cursor: pointer;
-}
-
-.fun {
-    /* CSS generated from https://uigradients.com */
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#idea {
-    text-align: center;
+.button {
+    background-color: #161A30;
+    color: #F3F8FF !important;
+    /* width: 15em !important;
+    height: 5em !important; */
+    font-size: 1rem !important;
+    margin: 1em auto;
 }
