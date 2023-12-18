@@ -1,41 +1,60 @@
 <!-- Create a fully responsive layout -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!-- Style Override Page -->
+    <link rel="stylesheet" href="bulma/bulma_styles_override.css" />
     <title>Bulma Responsive Layout Exercise</title>
-</head>
-<body>
-    <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-half">
-          is-half
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column is-one-quarter">
-          is-one-quarter
-        </div>
-        <div class="column">
-          Auto
+  </head>
+  <!-- The objective of this application is to fetch objects from two APIs in different locations and rendered thme in a Bulma styled HTML document -->
+  <body>
+    <!-- Header -->
+    <div class="navbar has-shadow is-white">
+      <!-- Logo Bran -->
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          <img
+            src="images/logo.jpg"
+            alt="site logo"
+            style="max-height: 70px"
+            class="py-2 px-2"
+          />
+        </a>
+        <a class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item">My Account</a>
+          <a class="navbar-item">Shopping Card (0)</a>
+          <a  class="navbar-item"></a>
         </div>
       </div>
-</body>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="section ot-4 pb-0">
+<nav class="breadcrumb has-arrow-separator">
+<ul class="container is-size-7">
+  <li><a class="has-text-grey">Main Page</a></li>
+  <li><a class="has-text-grey">Page 2</a></li>
+  <li class="is-active"><a>Page 3</a></li>
+
+</ul>
+</nav>
+
+    </div>
+
+    <!-- Bulma Action Triggers -->
+    <script src="bulma.js"></script>
+  </body>
 </html>
