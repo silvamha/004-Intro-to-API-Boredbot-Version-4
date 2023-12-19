@@ -22,7 +22,34 @@ function getIdea() {
             `
         })
 
+        fetch("https://api.chucknorris.io/jokes/random")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            document.querySelector('#message-body').textContent=data.value
+        })
+
+        fetch("	https://yesno.wtf/api")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            document.querySelector('#image-container2').innerHTML=`
+            <img class ="return-image" src="${data.image}">
+            `
+        })
 }
 
-
+/**!SECTION - NOTES
+ * Worked on several more APIs and worked on implementing them in BULMA.
+ * Next, create a new document with different sections and render different APIs using different BULMA components
+ */
 getIdea()
+
+
+/**!SECTION - Greta addresses
+ * 1 - https://yesno.wtf/assets/yes/9-6403270cf95723ae4664274db51f1fd4.gif
+ * 
+ * 2 - https://yesno.wtf/assets/yes/13-c3082a998e7758be8e582276f35d1336.gif 
+ * 
+ * 3 - https://yesno.wtf/assets/yes/2-5df1b403f2654fa77559af1bf2332d7a.gif
+ * */

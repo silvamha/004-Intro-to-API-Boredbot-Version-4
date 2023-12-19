@@ -3,8 +3,6 @@
  */
 const burgerIcon = document.querySelector("#burger");
 const navbarMenu = document.querySelector("#nav-links");
-console.log(navbarMenu);
-console.log(burgerIcon);
 
 // Toggle menu items on and off as the button is clicked
 burgerIcon.addEventListener("click", () => {
