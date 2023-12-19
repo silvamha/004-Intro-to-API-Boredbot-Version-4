@@ -1,6 +1,13 @@
 /* Page used to override or add to unavailable Bulma sytles
 Not meant to be a styling page */
 
+
+
 .anchor{
     font-size: 5em;
 }
+
+.navbar-burger {
+    transform: scale(1.5); /* Adjust the scale value as needed */
+  }
+  
